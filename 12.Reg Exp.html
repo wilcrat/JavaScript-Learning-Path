@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>Search a string for "w3Schools", and display the position</p>
+
+    <button onclick="myFunctionSearch()">Try it</button>
+
+    <p id="demo1"></p>
+
+    <p>Search a string for "microsoft", and replace it with "w3schools":</p>
+
+    <button onclick="myFunctionReplace()">Try it</button>
+
+    <p id="demo2"></p>
+
+    <script>
+      function myFunctionSearch() {
+        var str = "Visit W3Schools!";
+        var n = str.search(/w3schools/i);
+        document.getElementById("demo1").innerHTML = n;
+      }
+      function myFunctionReplace() {
+        var rep = "Visit microsoft";
+        var m = rep.replace(/microsoft/i, "w3schools");
+        document.getElementById("demo2").innerHTML = m;
+      }
+    </script>
+  </body>
+</html>
