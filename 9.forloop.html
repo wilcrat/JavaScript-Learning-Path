@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+    <script>
+      //Show Javascript 5 times
+      const n = 5;
+      for (let i = 1; i <= n; i++) {
+        document.write("Javascript" + "<br>");
+      }
+
+      //Show numbers 1 to 5
+      const k = 5;
+      for (i = 1; i <= k; i++) {
+        document.write(i + "<br>");
+      }
+
+      //Show All Cars in the Array
+      let myArray = ["Samsung", "Huawei", "Oppo", "Nokia", "Iphone"];
+      let text = "";
+      for (i = 1; i < myArray.length; i++) {
+        text += "We have " + myArray[i] + "<br>";
+      }
+      document.write(text);
+    </script>
+  </body>
+</html>
