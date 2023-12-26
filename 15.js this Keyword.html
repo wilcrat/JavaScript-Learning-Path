@@ -1,0 +1,22 @@
+<html>
+  <body>
+    <p>this Keyword</p>
+
+    My fullname is
+    <span id="demo"></span>
+    .
+
+    <script>
+      const myName = {
+        fname: "Wilson",
+        lname: "Juma",
+        fullname: function () {
+          return this.fname + " " + this.lname;
+        },
+      };
+      document.getElementById("demo").innerHTML = myName.fullname();
+    </script>
+
+    <button onclick="this.style.display='none'">Click to Remove Me!</button>
+  </body>
+</html>
