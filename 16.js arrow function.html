@@ -3,10 +3,26 @@
   <body>
     <h4>Arrow Function</h4>
     <p id="demo"></p>
-
+    <!--Arrow functions allow us to write shorter function syntax:-->
     <script>
       let arrowFunc = (a, b) => a * b;
       document.getElementById("demo").innerHTML = arrowFunc(2, 3);
+    </script>
+
+    <!--example 2-->
+    <p id="demo2"></p>
+
+    <script>
+      //before arrow function
+      /*--
+        hello = function() {
+  return "Hello World!";
+}--*/
+
+      let hello = () => {
+        return "I'm an arrow function";
+      };
+      document.getElementById("demo2").innerHTML = hello();
     </script>
   </body>
 </html>
