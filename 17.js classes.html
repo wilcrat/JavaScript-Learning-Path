@@ -38,6 +38,9 @@ It is a template for JavaScript objects.-->
           return date.getFullYear() - this.year;
         }
       }
+      const myCity = new City("Embu", 2020);
+      document.getElementById("demo2").innerHTML =
+        "My City is " + myCity.age() + " years old.";
     </script>
   </body>
 </html>
