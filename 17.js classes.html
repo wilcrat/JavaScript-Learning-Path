@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> </head>
+  <body>
+    <!--A JavaScript class is not an object.
+It is a template for JavaScript objects.-->
+    <!--When you have a class, you can use the class to create objects:-->
+
+    <h1>JavaScript Classes</h1>
+    <p>Creating two car objects from a car class:</p>
+
+    <p id="demo"></p>
+
+    <script>
+      class Car {
+        constructor(name, year) {
+          this.name = name;
+          this.year = year;
+        }
+      }
+      const myCar1 = new Car("Audi", 2023);
+      const myCar2 = new Car("BMW", 2024);
+
+      document.getElementById("demo").innerHTML =
+        myCar1.name + " " + myCar2.name;
+    </script>
+
+    <p id="demo2"></p>
+
+    <script>
+      class City {
+        constructor(name, year) {
+          this.name = name;
+          this.year = year;
+        }
+        age() {
+          const Date = new Date();
+          return date.getFullYear() - this.year;
+        }
+      }
+    </script>
+  </body>
+</html>
