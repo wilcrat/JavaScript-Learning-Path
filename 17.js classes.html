@@ -34,10 +34,13 @@ It is a template for JavaScript objects.-->
           this.year = year;
         }
         age() {
-          const Date = new Date();
+          const date = new Date();
           return date.getFullYear() - this.year;
         }
       }
+      const myCity = new City("Embu", 2020);
+      document.getElementById("demo2").innerHTML =
+        "My City is " + myCity.age() + " years old.";
     </script>
   </body>
 </html>
